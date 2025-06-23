@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YouTube Video Downloader</title>
+    <!-- Favicon einbinden -->
+    <link rel="icon" href="/static/logo.png" type="image/png">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -53,6 +55,7 @@
     <div class="bg-white rounded-xl shadow-2xl p-8 w-full max-w-lg space-y-6
                 dark:bg-black dark:text-gray-100 transition-colors duration-300"> <!-- Dark mode Hintergrund ist jetzt schwarz -->
         <h1 class="text-4xl font-extrabold text-center mb-6 text-gray-900 dark:text-white">
+            <img src="/static/logo.png" alt="YouTube Downloader Logo" class="h-16 mx-auto mb-4"> <!-- Logo hinzugefügt -->
             YouTube Downloader
         </h1>
 
@@ -68,7 +71,7 @@
                     type="url"
                     id="video_url"
                     name="video_url"
-                    placeholder="https://www.youtube.com/watch?v=..."
+                    placeholder="www.youtube.com or music.youtube.com or youtu.be"
                     required
                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200
                            dark:bg-black dark:border-gray-700 dark:text-white dark:focus:ring-blue-400" <!-- Dark mode input styling updated zu schwarz und weißer Text -->
@@ -107,7 +110,7 @@
             <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
                 <div class="flex-1">
                     <label for="start_time" class="block text-gray-700 dark:text-gray-300 text-sm font-semibold mb-2">
-                        Startzeit (MM:SS, optional):
+                        Startzeit (optional):
                     </label>
                     <input
                         type="text"
@@ -122,7 +125,7 @@
                 </div>
                 <div class="flex-1">
                     <label for="end_time" class="block text-gray-700 dark:text-gray-300 text-sm font-semibold mb-2">
-                        Endzeit (MM:SS, optional):
+                        Endzeit (optional):
                     </label>
                     <input
                         type="text"
